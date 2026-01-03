@@ -1,0 +1,24 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Book Title"
+  author: "Author Name"
+  date: today
+  chapters:
+    - index.qmd
+    - intro.md
+    - chapter1.md
+    - chapter2.md
+    - references.md
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+  pdf:
+    documentclass: scrreprt
