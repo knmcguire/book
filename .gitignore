@@ -1,0 +1,7 @@
+/.quarto/
+/_book/
+/.pixi/
+/pixi.lock
+*.qmd.html
+*.html
+*.pdf
