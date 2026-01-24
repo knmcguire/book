@@ -5,3 +5,5 @@
 *.qmd.html
 *.html
 *.pdf
+
+**/*.quarto_ipynb
