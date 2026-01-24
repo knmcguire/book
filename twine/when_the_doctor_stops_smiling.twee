@@ -1,0 +1,79 @@
+:: StoryTitle
+When The Doctor Stops Smiling
+
+
+:: StoryData
+{
+  "ifid": "FEC0B84E-079A-4885-98E2-5F199DA327D3",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "The Waiting Room",
+  "zoom": 1
+}
+
+
+:: Table {"position":"825,375","size":"100,100"}
+You look at the stack of magazine
+
+
+* |A>[Allt om Trådgard]
+* |B>[Vagabond]
+* |c>[ToppHälsa]
+
+
+\(click-append:?A)+(t8n:'dissolve')[  The cover an older women white hair smiling, wearing gardining gloves and holding a small shovel, tending her garden... I have only a balcony myself (set: $sawA to true)]
+
+\(click-append:?B)+(t8n:'dissolve')[  An elderly couple standing on a boat with sunglasses looking in the far. I feel that I'm too young still for cruises so I'm not that interested (set: $sawB to true)]
+
+\(click-append:?C)+(t8n:'dissolve')[  A very musscled man squated down with a dumbbell in his hands. I do already do boxercise and pretty healthy already, so I'm not that interested in that either (set: $sawC to true)]
+
+
+Everything is in Swedish... I could try to read it but I'm a little nervous.
+    [[Let's see if there is something else to do ->The Waiting Room]]
+
+
+
+
+
+
+
+:: The Kitchen {"position":"575,375","size":"100,100"}
+There is a small kitchen with a middle table with some cookies and machines to make coffee or tea. There is a a privacy wall between the waiting room and the kitchen, but I can still I can see an older man sitting there with his stroller next to him. 
+
+A younger man walked in and placed his hand on the older man's back. He looked up and smiled. It was his ride back home.
+
+[[The Waiting Room<- Let's look back to the waiting room]] 
+
+
+
+
+:: The Waiting Room {"position":"700,250","size":"100,100"}
+I was sitting in the waiting room. 
+It's a pretty big waiting room, with some stock pictures on the wall. There is a clock on the wall, it's 10:45 in the morning... I'm early.
+
+I wasn't alone waiting here. There were 2 women righth accross from the room from me. The older woman was in her 60s, readjusting her colorfull long skirt but looked around the room nervously, rocking in her chair. 
+
+The younger woman next to her, I guess her daughter, grabbed the older woman's hand. She talked to her, in an eastern european language. I couldn't understand what they were saying. 
+
+Let's not eavedrop. Let's find something to read. 
+
+	[[Table<- Look at the stack of magazines on the table]]
+
+
+	[[Windows<- Look to the right]]
+
+
+	[[The Kitchen<- Look to the left]]
+
+
+
+
+:: Windows {"position":"700,375","size":"100,100"}
+The waiting room was on the second floor. I can see the tops of trees waving outside. It was windy, but it was sunny. 
+
+It was May, which is usually one of the best months here in south sweden
+
+
+[[The Waiting Room<- Look around the room ]]
+
+
