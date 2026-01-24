@@ -12,6 +12,17 @@ When The Doctor Stops Smiling
 }
 
 
+:: Examination Room {"position":"900,250","size":"100,100"}
+
+
+
+:: My Phone {"position":"575,150","size":"100,100"}
+Message from chris
+
+    [[Let's see if there is something else to do ->The Waiting Room]]
+
+
+
 :: Table {"position":"825,375","size":"100,100"}
 You look at the stack of magazine
 
@@ -48,22 +59,56 @@ A younger man walked in and placed his hand on the older man's back. He looked u
 
 
 :: The Waiting Room {"position":"700,250","size":"100,100"}
-I was sitting in the waiting room. 
+
+
+(if:visits is 1)[I was sitting in the waiting room. 
 It's a pretty big waiting room, with some stock pictures on the wall. There is a clock on the wall, it's 10:45 in the morning... I'm early.
 
-I wasn't alone waiting here. There were 2 women righth accross from the room from me. The older woman was in her 60s, readjusting her colorfull long skirt but looked around the room nervously, rocking in her chair. 
+I need to find something to do]
+
+(if:visits is 2)[I wasn't alone waiting here. There were 2 women righth accross from the room from me. The older woman was in her 60s, readjusting her colorfull long skirt but looked around the room nervously, rocking in her chair. 
 
 The younger woman next to her, I guess her daughter, grabbed the older woman's hand. She talked to her, in an eastern european language. I couldn't understand what they were saying. 
 
-Let's not eavedrop. Let's find something to read. 
+Let's not eavedrop. Let's focus on something else
+]
+
+(if:visits is 3)[
+
+Seems like the older women is being picked up. The younger women stays behind in the waiting room. 
+
+]
+
+(if:visits is 4)[
+
+Nurse comes back in, seems like she is asking for the younger women to translate.
+
+]
+
+(if:visits is 5)[
+
+Kimberly?
+
+]
+
+
+(if:visits < 5)[
+
 
 	[[Table<- Look at the stack of magazines on the table]]
 
 
-	[[Windows<- Look to the right]]
+	[[Windows<- Look out the big window on the right]]
 
 
-	[[The Kitchen<- Look to the left]]
+	[[The Kitchen<- Look at the kitchen area to the left]]
+
+
+	[[My Phone<- Let's check my phone]]
+] (else)
+[
+[[Examination Room<- Go with Nurse]]
+]
 
 
 
